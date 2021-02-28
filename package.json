@@ -4,7 +4,9 @@
   "scripts": {
     "build": "bsb -make-world",
     "clean": "bsb -clean-world",
-    "start": "bsb -make-world -w"
+    "start": "bsb -make-world -w",
+    "snowpack-start": "snowpack dev",
+    "snowpack-build": "snowpack build"
   },
   "keywords": [
     "rescript"
@@ -12,6 +14,10 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "bs-platform": "*"
+    "bs-platform": "*",
+    "snowpack": "^3.0.13"
+  },
+  "dependencies": {
+    "@rescript/react": "^0.10.1"
   }
 }
